@@ -90,3 +90,35 @@ body, h2, p, a, .mb-0 {
     color: #0056b3;
 }
 
+/* --- TÍTULO CON EFECTO 3D REALISTA --- */
+.titulo-seccion {
+    font-family: 'Arial Black', 'Impact', sans-serif; /* Se recomiendan fuentes gruesas para que luzca el 3D */
+    font-size: 3rem;           /* Tamaño grande para apreciar el relieve */
+    font-weight: 900;          /* Relleno al máximo grosor */
+    color: #3976af;            /* Color del frente de la letra (Azul brillante) */
+    text-transform: uppercase; /* Mayúsculas para dar mayor impacto visual */
+    letter-spacing: 2px;       /* Separación para que no se encimen los efectos 3D */
+    
+    /* Efecto de extrusión 3D mediante capas de sombra */
+    text-shadow: 
+        1px 1px 0px #002244,
+        2px 2px 0px #002244,
+        3px 3px 0px #002244,
+        4px 4px 0px #002244,
+        5px 5px 0px #002244,
+        6px 6px 5px rgba(0, 0, 0, 0.4); /* La última capa es una sombra suave proyectada en el fondo */
+        
+    transition: all 0.3s ease;
+}
+
+/* Efecto interactivo opcional: al pasar el mouse da la impresión de hundirse un poco */
+.titulo-seccion:hover {
+    transform: translate(2px, 2px);
+    text-shadow: 
+        1px 1px 0px #002244,
+        2px 2px 0px #002244,
+        3px 3px 0px #002244,
+        4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
