@@ -11,3 +11,63 @@ h1 {
     /* Opcional: puedes agregar margen para separarlo del contenido superior */
     margin-top: 20px; 
 }
+
+/*LETRAS*/
+/* ========================================================
+   1. TIPO DE LETRA GENERAL (Para toda la página)
+   ======================================================= */
+body, h2, p, a, .mb-0 {
+    /* Esta es la tipografía limpia sin serifa idéntica al diseño que quieres */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* ========================================================
+   2. EL TÍTULO (San Salvador)
+   ======================================================= */
+.text-white-section h2 {
+    /* El color azul oscuro que se ve en tu título */
+    color: #0022a0 !important; 
+    /* Letra gruesa (negrita) */
+    font-weight: 700 !important;
+    /* Tamaño grande */
+    font-size: 2.2rem !important;
+}
+
+/* ========================================================
+   3. LOS PÁRRAFOS (El texto descriptivo)
+   ======================================================= */
+.text-white-section p, 
+.text-white-section .mb-0 {
+    /* Color gris oscuro/negro suave para que sea legible sobre blanco */
+    color: #212529 !important; 
+    /* Tamaño de lectura cómodo */
+    font-size: 1.05rem !important;
+    /* Espaciado entre líneas para que no se vea amontonado */
+    line-height: 1.6 !important;
+}
+
+/* ========================================================
+   4. ENLACES INFERIORES (¿Dónde comer?, ¿Dónde dormir?...)
+   ======================================================= */
+.btn-destination-link {
+    /* El color azul claro brillante exacto de las preguntas */
+    color: #2da1e7 !important;
+    /* Grosor medio */
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+}
+
+/*IMAGENES*/
+/* ========================================================
+   ESTILO PARA LOGRAR LA FOTO PANORÁMICA DE LA REFERENCIA
+   ======================================================== */
+.img-destination {
+    width: 100% !important;        /* Ocupa todo el ancho disponible de la columna */
+    height: 340px !important;      /* Modifica este número si la quieres más alta o más delgada */
+    object-fit: cover !important;  /* Recorta y acomoda la foto perfectamente para que NO se estire ni se deforme */
+    object-position: center;       /* Enfoca el centro de la fotografía automáticamente */
+    border-radius: 4px !important; /* Bordes ligeramente suavizados iguales a los de tu imagen */
+    margin-bottom: 1rem !important;/* Separación óptima con las preguntas de abajo */
+}
+
+
