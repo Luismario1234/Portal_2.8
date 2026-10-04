@@ -1,0 +1,13 @@
+header {
+    background-color: #0968c791; /* El color azul de tu imagen */
+    padding: 20px;            /* Espacio interno para que el logo no quede pegado a los bordes */
+    text-align: center;       /* Centra el logotipo en la pantalla */
+}
+
+
+/*en html lugares turisticos*/
+h1 {
+    text-align: center;
+    /* Opcional: puedes agregar margen para separarlo del contenido superior */
+    margin-top: 20px; 
+}
