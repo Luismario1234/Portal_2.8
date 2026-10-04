@@ -71,3 +71,22 @@ body, h2, p, a, .mb-0 {
 }
 
 
+/* --- ESTILO ESPECÍFICO PARA "VER MÁS" --- */
+.enlace-ver-mas {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;                  /* Espaciado exacto entre el ícono y el texto */
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía limpia */
+    font-size: 14px;
+    font-weight: 500;
+    color: #003366;            /* Color azul exacto de la imagen corporativa */
+    margin-top: 15px;          /* Separación respecto al texto de arriba */
+    transition: color 0.2s ease;
+}
+
+/* Cambio de color sutil al pasar el cursor */
+.enlace-ver-mas:hover {
+    color: #0056b3;
+}
+
