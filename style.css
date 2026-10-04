@@ -1,6 +1,6 @@
 header {
     background-color: #0968c791; /* El color azul de tu imagen */
-    padding: 20px;            /* Espacio interno para que el logo no quede pegado a los bordes */
+    padding: 5px;            /* Espacio interno para que el logo no quede pegado a los bordes */
     text-align: center;       /* Centra el logotipo en la pantalla */
 }
 
@@ -121,4 +121,64 @@ body, h2, p, a, .mb-0 {
         4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* --- CONFIGURACIÓN DE LA CABECERA AZUL --- */
+.cabecera-azul-fija {
+    background-color: #7cb2e8; /* Color azul idéntico al de tu fondo actual */
+    padding: 50px 0;           /* Espaciado para que el logo respire al inicio */
+    position: sticky;          /* Se queda retenido en la parte superior al hacer scroll */
+    top: 0;
+    z-index: 1000;             /* Pasa por encima de la foto de la portada al bajar */
+    
+    /* Animación para que la franja azul se vuelva más compacta al bajar */
+    animation: compactarCabecera linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 100px;
+}
+
+/* Contenedor del logo: Al inicio está perfectamente CENTRADO */
+.container-logo-sticky {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    
+    /* Animación para mover el logo magnéticamente a la izquierda */
+    animation: moverLogoIzquierda linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 200px;
+}
+
+/* La imagen del Logotipo "EL SALVADOR" */
+.logo-imagen-animada {
+    max-height: 180px; /* Tamaño original en tu cabecera */
+    width: auto;
+    display: block;
+    
+    /* Animación para encoger el logo sutilmente al bajar */
+    animation: reducirLogoImagen linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 200px;
+}
+
+/* --- DETALLES DE LAS ANIMACIONES NATIVAS --- */
+
+/* Al bajar la página, la franja azul se hace más delgada */
+@keyframes compactarCabecera {
+    to {
+        padding: 15px 0;
+    }
+}
+
+/* El logo cambia su alineación hacia el extremo izquierdo */
+@keyframes moverLogoIzquierda {
+    to {
+        justify-content: flex-start;
+    }
+}
+
+/* El logo se adapta para no ocupar tanto espacio vertical */
+@keyframes reducirLogoImagen {
+    to {
+        max-height: 60px;
+    }
+}
 
