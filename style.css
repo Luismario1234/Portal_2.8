@@ -1,5 +1,5 @@
 header {
-    background-color: #0968c791; /* El color azul de tu imagen */
+    background-color: #00000091; /* El color azul de tu imagen */
     padding: 5px;            /* Espacio interno para que el logo no quede pegado a los bordes */
     text-align: center;       /* Centra el logotipo en la pantalla */
 }
@@ -26,7 +26,7 @@ body, h2, p, a, .mb-0 {
    ======================================================= */
 .text-white-section h2 {
     /* El color azul oscuro que se ve en tu título */
-    color: #0022a0 !important; 
+    color: #001692 !important; 
     /* Letra gruesa (negrita) */
     font-weight: 700 !important;
     /* Tamaño grande */
@@ -47,7 +47,7 @@ body, h2, p, a, .mb-0 {
 }
 
 /* ========================================================
-   4. ENLACES INFERIORES (¿Dónde comer?, ¿Dónde dormir?...)
+   4. ENLACES INFERIORES 
    ======================================================= */
 .btn-destination-link {
     /* El color azul claro brillante exacto de las preguntas */
@@ -80,7 +80,7 @@ body, h2, p, a, .mb-0 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía limpia */
     font-size: 14px;
     font-weight: 500;
-    color: #003366;            /* Color azul exacto de la imagen corporativa */
+    color: #001375;            /* Color azul exacto de la imagen corporativa */
     margin-top: 15px;          /* Separación respecto al texto de arriba */
     transition: color 0.2s ease;
 }
@@ -123,11 +123,11 @@ body, h2, p, a, .mb-0 {
 
 /* --- CONFIGURACIÓN DE LA CABECERA AZUL --- */
 .cabecera-azul-fija {
-    background-color: #7cb2e8; /* Color azul idéntico al de tu fondo actual */
+    background-color: #498fc1; /* Color azul idéntico al de tu fondo actual */
     padding: 50px 0;           /* Espaciado para que el logo respire al inicio */
     position: sticky;          /* Se queda retenido en la parte superior al hacer scroll */
     top: 0;
-    z-index: 1000;             /* Pasa por encima de la foto de la portada al bajar */
+    z-index: 100;             /* Pasa por encima de la foto de la portada al bajar */
     
     /* Animación para que la franja azul se vuelva más compacta al bajar */
     animation: compactarCabecera linear both;
@@ -144,7 +144,7 @@ body, h2, p, a, .mb-0 {
     /* Animación para mover el logo magnéticamente a la izquierda */
     animation: moverLogoIzquierda linear both;
     animation-timeline: scroll();
-    animation-range: 0px 200px;
+    animation-range: 600px 800px;
 }
 
 /* La imagen del Logotipo "EL SALVADOR" */
@@ -156,7 +156,7 @@ body, h2, p, a, .mb-0 {
     /* Animación para encoger el logo sutilmente al bajar */
     animation: reducirLogoImagen linear both;
     animation-timeline: scroll();
-    animation-range: 0px 200px;
+    animation-range: 100px 400px;
 }
 
 /* --- DETALLES DE LAS ANIMACIONES NATIVAS --- */
