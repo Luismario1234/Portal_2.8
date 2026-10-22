@@ -182,3 +182,26 @@ body, h2, p, a, .mb-0 {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+/* ===== Fondo difuminado (capas fijas, sin background-attachment) ===== */
+body::before,body::after{content:"";position:fixed;pointer-events:none}
+body::after{
+  inset:0;z-index:-2;
+  background:
+    radial-gradient(circle at 10% 10%,rgba(15,71,175,.55),transparent 45%),
+    radial-gradient(circle at 90% 35%,rgba(73,143,193,.55),transparent 45%),
+    radial-gradient(circle at 15% 80%,rgba(255,255,255,.95),transparent 40%),
+    radial-gradient(circle at 85% 95%,rgba(15,71,175,.45),transparent 45%);
+}
+/* ===== Variables ===== */
+:root{
+  --azul:#0f47af; --celeste:#498fc1; --azul-titulo:#001692; --azul-link:#001375; --azul-hover:#0056b3; --azul-3d:#002244;
+  --sombra-azul:rgba(15,71,175,.18);
+  --texto-3d:1px 1px 0 var(--azul-3d),2px 2px 0 var(--azul-3d),3px 3px 0 var(--azul-3d),4px 4px 0 var(--azul-3d),5px 5px 0 var(--azul-3d),6px 6px 5px rgba(0,0,0,.4);
+  --texto-3d-hover:1px 1px 0 var(--azul-3d),2px 2px 0 var(--azul-3d),3px 3px 0 var(--azul-3d),4px 4px 4px rgba(0,0,0,.5);
+  color-scheme:light;
+  padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);
+}
+>>>>>>> 05de55fec7c1d7d2d61abb3c42390ff53d88b16a
